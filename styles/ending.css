@@ -1,0 +1,105 @@
+.email-sign-up{
+    /* border: 2px solid var(--green); */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    padding: 12px;
+
+
+    
+
+}
+.email-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+
+
+.email-sign-up h1{
+    text-align: center;
+    font-size: 2em;
+    color: #f78b10;
+    
+        
+}
+
+.email-sign-up h6{
+    margin: 0;
+    font-size: medium;
+    text-align: left;
+    color: var(--grey);
+    margin-bottom: 12px;
+    
+    
+}
+
+
+.email-input-field{
+    padding-left: 20px;
+    display:block;
+    width: 75%;
+    margin: auto;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 0px;
+}
+
+.email-input-field:hover{
+    border: solid;
+    border-color: var(--green);
+    border-width: 2px;
+    margin-bottom: 6px;
+    
+}
+.submit-button{
+    height: 30px;
+    width: 80px;
+    border-radius: 8px;
+    border-color: var(--green);
+    border: solid;
+    background-color: var(--white);
+    color: var(--green);
+    font-size: medium;
+}
+.submit-button:active{
+    border-color: var(--red);
+    color: var(--red);
+}
+
+.contact-info{
+    position: relative;
+    margin-top: 5px;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 32px, #c5d4f1 32px, #c5d4f1 64px);
+    background-color: #0e3655;
+    width: 100%;
+    height: 300px;
+    border-radius: 0 0 10px 10px;
+}
+
+.info-end{
+    font-style: italic;
+    position: absolute;
+    background-color: #0e3655;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px var(--black-shadow);
+
+   
+    right: 5px;
+    
+    bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-size: 1.2em;
+}

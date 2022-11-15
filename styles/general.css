@@ -1,0 +1,83 @@
+:root{
+    --black:rgba(0,0,0,1);
+    --black-shadow:rgba(0,0,0,0.15);
+    --yellow:rgba(254, 232, 34, 1);
+    --green:rgba(21, 170, 89, 1);
+    --white:rgba(255,255,255,1);
+    --red:rgb(251, 94, 94);
+    --grey:rgba(90, 90, 90, 1);
+    --blue:rgba(44, 124, 242, 1);
+}
+
+body{
+
+    font-family: Roboto;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+h1{
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+a{
+    display: block;
+    height: inherit;
+    width: inherit;
+    
+    text-decoration: none;
+}
+
+.l{
+   border: none;
+    background-color: rgb(93, 92, 92);
+    height: 3px;
+    width: 90vw;
+    border-radius: 3px;
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: grey;
+    margin:25px 0;
+
+}
+
+.landing-page{
+    margin: auto;
+    
+    max-width:1200px;
+}
+html{
+    scroll-behavior: smooth;
+}
+button{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 960px) and (max-width: 1200px){
+    .landing-page {
+        width: 960px;
+        padding: 0 8px;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+    
+    
+
+}
+@media screen and (min-width: 700px) and (max-width: 960px){
+    .landing-page {
+        width: 700px;
+        padding: 0 8px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+}
+
+

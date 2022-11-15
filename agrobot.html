@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AGORBOTICS</title>
+        <link rel = "icon" href = "images/iconT.png" 
+        type = "image/x-icon" style="background-color:white;">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/agrocontent.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+            @keyframes animate {
+                0%{
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 1;
+                    border-radius: 0;
+                }
+                100%{
+                    transform: translateY(-1000px) rotate(720deg);
+                    opacity: 0;
+                    border-radius: 50%;
+                }
+            }
+            body{
+                color: rgb(230, 155, 85);
+            }
+
+            .background {
+                z-index: -1;
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                margin: 0;
+                padding: 0;
+                background: #36982f;
+                overflow: hidden;
+            }
+            .background li {
+                position: absolute;
+                display: block;
+                list-style: none;
+                width: 20px;
+                height: 20px;
+                background: rgba(255, 255, 255, 0.2);
+                animation: animate 19s linear infinite;
+            }
+
+
+
+
+            .background li:nth-child(0) {
+                left: 23%;
+                width: 191px;
+                height: 191px;
+                bottom: -191px;
+                animation-delay: 1s;
+            }
+            .background li:nth-child(1) {
+                left: 58%;
+                width: 137px;
+                height: 137px;
+                bottom: -137px;
+                animation-delay: 4s;
+            }
+            .background li:nth-child(2) {
+                left: 18%;
+                width: 150px;
+                height: 150px;
+                bottom: -150px;
+                animation-delay: 2s;
+            }
+            .background li:nth-child(3) {
+                left: 71%;
+                width: 145px;
+                height: 145px;
+                bottom: -145px;
+                animation-delay: 8s;
+            }
+            .background li:nth-child(4) {
+                left: 6%;
+                width: 166px;
+                height: 166px;
+                bottom: -166px;
+                animation-delay: 17s;
+            }
+            .background li:nth-child(5) {
+                left: 31%;
+                width: 150px;
+                height: 150px;
+                bottom: -150px;
+                animation-delay: 22s;
+            }
+            .background li:nth-child(6) {
+                left: 17%;
+                width: 155px;
+                height: 155px;
+                bottom: -155px;
+                animation-delay: 21s;
+            }
+            .background li:nth-child(7) {
+                left: 65%;
+                width: 113px;
+                height: 113px;
+                bottom: -113px;
+                animation-delay: 7s;
+            }
+            .background li:nth-child(8) {
+                left: 47%;
+                width: 121px;
+                height: 121px;
+                bottom: -121px;
+                animation-delay: 5s;
+            }
+            .background li:nth-child(9) {
+                left: 19%;
+                width: 186px;
+                height: 186px;
+                bottom: -186px;
+                animation-delay: 23s;
+            }
+        </style>
+
+
+
+    </head>
+    <body>
+        <ul class="background">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+        <div class="landing-page">
+            <header>
+                
+
+                
+                <div class="left-section" onclick="location.href='index.html';">
+                    <img class="logo" src="images/icon.png">
+                    <img class="logo-text" src="images/logo text.png">
+    
+                </div>
+                <div class="right-section">
+                    <button class="sign-button" onclick="location.href='index.html';">Home</button>
+                </div>
+                
+    
+    
+                
+            </header>
+            <div class="line"></div>
+            <section class="bot-images-container">
+                <img class="bot-img" src="agro-image/image 1.png">
+                <img class="bot-img" src="agro-image/image 2.png">
+            </section>
+            <h1>WHY AGROBOT?</h1>
+            <p>Aliquam sodales ultricies erat, eget dictum odio ultricies vel. Curabitur imperdiet sapien felis, in tincidunt purus feugiat vel. Pellentesque sagittis odio ligula. Aliquam risus risus, tincidunt ac nulla at, gravida molestie mauris. Proin auctor tincidunt lacinia. In hendrerit mauris ante, nec interdum quam sollicitudin ac. Vivamus massa lacus, tincidunt in massa eu, molestie hendrerit lacus. Pellentesque hendrerit pulvinar nisl vel consectetur. Nullam nibh odio, ullamcorper quis tristique eu, posuere a leo.</p>
+            <h1>Requirements</h1>
+            <img src="agro-image/parts.png">
+            <h1>How it works?</h1>
+            <p> The idea behind this robot was to detect the black line using 2 infrared sensors and move the robot accordingly using L293D motor driver module. Now the question is how to implement the line sensing mechanism in a Line Following Robot. We all know that the reflection of light on the white surface is maximum and minimum on the black surface because the black surface absorbs maximum amount of light. So, we are going to use this property of light to detect the line. To detect light, either light-dependent resistor or an Infrared sensor can be used. For this project, we are going with the Infrared sensor because of its higher accuracy. To detect the line, we place two Infrared sensors one on the left and other on the right side of the robot. We then place the robot on the line such that the line lies in the middle of both sensors. Now comes the motor driver, the reason to use a motor driver here is because the output signal of an Arduino is not sufficient to drive the motor, furthermore, we need to rotate the motors in both directions, therefore we use a motor driver to drive the motor as required and also the motor driver is able to supply sufficient current to drive the motor. Here, we are using a L293D motor driver which is sufficient for our 2 motors.</p>
+            <h1>How does the color-sensor works?</h1>
+            <p>
+                The TCS3200 color sensor can detect a wide variety of colors based on their wavelength. This sensor is specially useful for color recognition projects such as color matching, color sorting and much more. The TCS3200 color sensor uses a TAOS TCS3200 RGB sensor chip to detect color. It also contains four white LEDs that light up the object in front of it. The TCS3200 has an array of photodiodes with 4 different filters. A photodiode is simply a semiconductor device that converts light into current. The sensor has a current-to-frequency converter that converts the photodiodes’ readings into a square wave with a frequency that is proportional to the light intensity of the chosen color. This frequency is then, read by the Arduino.
+
+            </p>
+            <h1>CIRCUIT</h1>
+            <section class="crc-images-container">
+                <img class="crc-img" src="agro-image/circuit-2.png">
+                <img class="crc-img" src="agro-image/circuit.png">
+            </section>
+            
+            <h1>--CODE--</h1>
+
+
+
+            <pre>
+                #include <AFMotor.h>
+
+                    //defining pins and variables
+                    #define lefts A4 
+                    #define rights A5 
+                    
+                    //defining motors
+                    
+                    AF_DCMotor motor1(3, MOTOR12_8KHZ); 
+                    AF_DCMotor motor2(4, MOTOR12_8KHZ);
+                    
+                    
+                    void setup() {
+                    //setting the speed of motors
+                    motor1.setSpeed(250);
+                    motor2.setSpeed(200);
+                    //declaring pin types
+                    pinMode(lefts,INPUT);
+                    pinMode(rights,INPUT);
+                    //begin serial communication
+                    Serial.begin(9600);
+                    
+                    }
+                    
+                    void loop(){
+                    //printing values of the sensors to the serial monitor
+                    Serial.println(analogRead(lefts));
+                    Serial.println(analogRead(rights));
+                    //line detected by both
+                    if(analogRead(lefts)<=400 && analogRead(rights)<=400){
+                        //stop
+                        motor1.run(RELEASE);
+                        motor2.run(RELEASE);
+                    }
+                    //line detected by left sensor
+                    else if(analogRead(lefts)<=400 && !analogRead(rights)<=400){
+                        //turn left
+                            motor2.run(FORWARD);
+                    
+                        motor1.run(RELEASE);
+                        motor2.run(FORWARD);
+                    
+                    }
+                    //line detected by right sensor
+                    else if(!analogRead(lefts)<=400 && analogRead(rights)<=400){
+                        //turn right
+                    
+                        motor1.run(FORWARD);
+                        motor2.run(RELEASE);
+                    
+                    }
+                    //line detected by none
+                    else if(!analogRead(lefts)<=400 && !analogRead(rights)<=400){
+                        //stop
+                    
+                        motor1.run(BACKWARD);
+                        motor2.run(BACKWARD);
+                    
+                    }
+                    
+                    }
+                
+                
+
+            </pre>
+            <h1>Usefull links</h1>
+            <ul>https://techmaze.romman.store/</ul>
+        </div>
+    </body>
+</html>
