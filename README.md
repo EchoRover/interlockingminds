@@ -1,2 +1,3 @@
-# studious-barnacle
-#interlocking minds small startup
+#interlocking Minds
+#first look into web development
+
