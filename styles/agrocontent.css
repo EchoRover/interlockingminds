@@ -32,7 +32,7 @@
 
 }
 h1{
-    font-size: larger;
+    font-size: 1.5rem;
     color: rgb(0, 255, 17);
     font-weight: bolder;
     font-style: italic;
@@ -40,9 +40,15 @@ h1{
 }
 p{
     color: rgb(241, 220, 28);
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 pre{
     color: rgb(42, 88, 223);
     font-weight: bold;
+}
+
+ul{
+    color: rgb(215, 248, 237);
+    background-color: rgba(0, 255, 255, 0.407);
+    border-radius: 5px;
 }
