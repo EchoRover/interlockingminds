@@ -78,10 +78,12 @@
 .para{
     position: relative;
     margin-bottom: var(--pwidth);
-    color: var(--grey);
+    
     font-size: large;
     font-weight: bold;
-    color: rgb(88, 6, 252);
+    color: rgb(141, 79, 212);
+    background-color: rgba(240, 255, 255, 0.466);
+    border-radius: 12px;
     
 }
 .circle{
