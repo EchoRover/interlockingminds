@@ -79,6 +79,9 @@
     position: relative;
     margin-bottom: var(--pwidth);
     color: var(--grey);
+    font-size: large;
+    font-weight: bold;
+    color: rgb(88, 6, 252);
     
 }
 .circle{
