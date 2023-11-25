@@ -166,10 +166,11 @@ position: absolute;
     border-radius: 8px;
     margin: auto;
     display: grid;
-    grid-template-rows: 4fr 1fr;
+    grid-template-rows: 3fr 1fr;
     row-gap: 15px;
     width: 300px;
     z-index: 10;
+    max-height: 400px;
     /* border:2px solid var(--black); */
 }
 
@@ -322,3 +323,5 @@ position: absolute;
 
 
   
+
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Younglings</title>
+        <link rel = "icon" href = "images/iconT.png" 
+        type = "image/x-icon" style="background-color:white;">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/agrocontent.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+            @keyframes animate {
+                0%{
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 1;
+                    border-radius: 0;
+                }
+                100%{
+                    transform: translateY(-1000px) rotate(720deg);
+                    opacity: 0;
+                    border-radius: 50%;
+                }
+            }
+            body{
+                color: rgb(230, 155, 85);
+            }
+
+            .background {
+                z-index: -1;
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                margin: 0;
+                padding: 0;
+                background: #36982f;
+                overflow: hidden;
+            }
+            .background li {
+                position: absolute;
+                display: block;
+                list-style: none;
+                width: 20px;
+                height: 20px;
+                background: rgba(255, 255, 255, 0.2);
+                animation: animate 19s linear infinite;
+            }
+
+
+
+
+            .background li:nth-child(0) {
+                left: 23%;
+                width: 191px;
+                height: 191px;
+                bottom: -191px;
+                animation-delay: 1s;
+            }
+            .background li:nth-child(1) {
+                left: 58%;
+                width: 137px;
+                height: 137px;
+                bottom: -137px;
+                animation-delay: 4s;
+            }
+            .background li:nth-child(2) {
+                left: 18%;
+                width: 150px;
+                height: 150px;
+                bottom: -150px;
+                animation-delay: 2s;
+            }
+            .background li:nth-child(3) {
+                left: 71%;
+                width: 145px;
+                height: 145px;
+                bottom: -145px;
+                animation-delay: 8s;
+            }
+            .background li:nth-child(4) {
+                left: 6%;
+                width: 166px;
+                height: 166px;
+                bottom: -166px;
+                animation-delay: 17s;
+            }
+            .background li:nth-child(5) {
+                left: 31%;
+                width: 150px;
+                height: 150px;
+                bottom: -150px;
+                animation-delay: 22s;
+            }
+            .background li:nth-child(6) {
+                left: 17%;
+                width: 155px;
+                height: 155px;
+                bottom: -155px;
+                animation-delay: 21s;
+            }
+            .background li:nth-child(7) {
+                left: 65%;
+                width: 113px;
+                height: 113px;
+                bottom: -113px;
+                animation-delay: 7s;
+            }
+            .background li:nth-child(8) {
+                left: 47%;
+                width: 121px;
+                height: 121px;
+                bottom: -121px;
+                animation-delay: 5s;
+            }
+            .background li:nth-child(9) {
+                left: 19%;
+                width: 186px;
+                height: 186px;
+                bottom: -186px;
+                animation-delay: 23s;
+            }
+        </style>
+
+
+
+    </head>
+    <body>
+        <ul class="background">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+        <div class="landing-page">
+            <header>
+                
+
+                
+                <div class="left-section" onclick="location.href='index.html';">
+                    <img class="logo" src="images/icon.png">
+                    <img class="logo-text" src="images/logo text.png">
+    
+                </div>
+                <div class="right-section">
+                    <button class="sign-button" onclick="location.href='index.html';">Home</button>
+                </div>
+                
+    
+    
+                
+            </header>
+            <div class="line"></div>
+        </div>
+    </body>
+</html>
