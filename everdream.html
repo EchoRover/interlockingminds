@@ -1,164 +1,183 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Younglings</title>
-        <link rel = "icon" href = "images/iconT.png" 
-        type = "image/x-icon" style="background-color:white;">
-        <link rel="stylesheet" href="styles/general.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/agrocontent.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <style>
-            @keyframes animate {
-                0%{
-                    transform: translateY(0) rotate(0deg);
-                    opacity: 1;
-                    border-radius: 0;
-                }
-                100%{
-                    transform: translateY(-1000px) rotate(720deg);
-                    opacity: 0;
-                    border-radius: 50%;
-                }
-            }
-            body{
-                color: rgb(230, 155, 85);
-            }
 
-            .background {
-                z-index: -1;
-                position: fixed;
-                width: 100vw;
-                height: 100vh;
-                top: 0;
-                left: 0;
-                margin: 0;
-                padding: 0;
-                background: #36982f;
-                overflow: hidden;
-            }
-            .background li {
-                position: absolute;
-                display: block;
-                list-style: none;
-                width: 20px;
-                height: 20px;
-                background: rgba(255, 255, 255, 0.2);
-                animation: animate 19s linear infinite;
-            }
+<head>
+    <title>Younglings</title>
+    <link rel="icon" href="images/iconT.png" type="image/x-icon" style="background-color:white;">
+    <!-- <link rel="stylesheet" href="styles/general.css"> -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/everdream.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
 
 
 
-            .background li:nth-child(0) {
-                left: 23%;
-                width: 191px;
-                height: 191px;
-                bottom: -191px;
-                animation-delay: 1s;
-            }
-            .background li:nth-child(1) {
-                left: 58%;
-                width: 137px;
-                height: 137px;
-                bottom: -137px;
-                animation-delay: 4s;
-            }
-            .background li:nth-child(2) {
-                left: 18%;
-                width: 150px;
-                height: 150px;
-                bottom: -150px;
-                animation-delay: 2s;
-            }
-            .background li:nth-child(3) {
-                left: 71%;
-                width: 145px;
-                height: 145px;
-                bottom: -145px;
-                animation-delay: 8s;
-            }
-            .background li:nth-child(4) {
-                left: 6%;
-                width: 166px;
-                height: 166px;
-                bottom: -166px;
-                animation-delay: 17s;
-            }
-            .background li:nth-child(5) {
-                left: 31%;
-                width: 150px;
-                height: 150px;
-                bottom: -150px;
-                animation-delay: 22s;
-            }
-            .background li:nth-child(6) {
-                left: 17%;
-                width: 155px;
-                height: 155px;
-                bottom: -155px;
-                animation-delay: 21s;
-            }
-            .background li:nth-child(7) {
-                left: 65%;
-                width: 113px;
-                height: 113px;
-                bottom: -113px;
-                animation-delay: 7s;
-            }
-            .background li:nth-child(8) {
-                left: 47%;
-                width: 121px;
-                height: 121px;
-                bottom: -121px;
-                animation-delay: 5s;
-            }
-            .background li:nth-child(9) {
-                left: 19%;
-                width: 186px;
-                height: 186px;
-                bottom: -186px;
-                animation-delay: 23s;
-            }
-        </style>
+</head>
+
+<body>
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <header>
 
 
 
-    </head>
-    <body>
-        <ul class="background">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-         </ul>
-        <div class="landing-page">
-            <header>
-                
+        <div class="left-section" onclick="location.href='index.html';">
+            <img class="logo" src="images/icon.png">
+            <img class="logo-text" src="images/logo text.png">
 
-                
-                <div class="left-section" onclick="location.href='index.html';">
-                    <img class="logo" src="images/icon.png">
-                    <img class="logo-text" src="images/logo text.png">
-    
-                </div>
-                <div class="right-section">
-                    <button class="sign-button" onclick="location.href='index.html';">Home</button>
-                </div>
-                
-    
-    
-                
-            </header>
-            <div class="line"></div>
         </div>
-    </body>
+        <div class="right-section">
+            <button class="sign-button" onclick="location.href='index.html';">Home</button>
+        </div>
+    </header>
+    <div class="landing-page">
+
+        <div class="line"></div>
+        <div class = "allideas">
+            <div class = "idea">
+                <h2>1. Plastic Bag Weaving:</h2>
+                <ul>
+                    <li><strong>Materials:</strong>
+                        <ul>
+                            <li>Plastic bags (grocery bags, produce bags, etc.)</li>
+                            <li>Scissors</li>
+                        </ul>
+                    </li>
+                    <li><strong>Procedure:</strong>
+                        <ol>
+                            <li>Flatten and fold plastic bags into strips.</li>
+                            <li>Cut the folded bags into strips, creating plastic "yarn."</li>
+                            <li>Weave the plastic strips together to create a mat, bag, or decorative piece.</li>
+                            <li>Secure the ends by tying knots or melting them together with heat (use caution with this
+                                method).</li>
+                        </ol>
+                    </li>
+                    <li><strong>Note:</strong> This activity turns plastic bags into a useful and durable item while
+                        reducing plastic waste.</li>
+                </ul>
+    
+            </div>
+            <div class = "imgshow">
+                <img src = "images/everdream/plasticbag.jpeg">
+                <img src = "images/everdream/plasticbag2.jpeg">
+
+            </div>
+            <div class="idea">
+                <h2>2. CD Mosaic Coasters:</h2>
+                <ul>
+                    <li><strong>Materials:</strong>
+                        <ul>
+                            <li>Old CDs or DVDs</li>
+                            <li>Broken tiles, glass, or colored paper</li>
+                            <li>Glue</li>
+                            <li>Grout (optional)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Procedure:</strong>
+                        <ol>
+                            <li>Break tiles or glass into small pieces or cut colored paper into mosaic-sized shapes.</li>
+                            <li>Apply glue to the surface of the CD.</li>
+                            <li>Arrange the mosaic pieces on the CD, creating a colorful pattern.</li>
+                            <li>Allow the glue to dry completely.</li>
+                            <li>Optionally, apply grout between the mosaic pieces and wipe away excess.</li>
+                        </ol>
+                    </li>
+                    <li><strong>Note:</strong> This activity transforms old CDs into stylish and functional coasters.</li>
+                </ul>
+    
+            </div>
+            <div class = "imgshow">
+                <img src = "images/everdream/cd.jpeg">
+                <img src = "images/everdream/cd2.jpeg">
+
+            </div>
+    
+    
+            <div class = "idea">
+                <h2>3. Tin Can Planters:</h2>
+                <ul>
+                    <li><strong>Materials:</strong>
+                        <ul>
+                            <li>Empty tin cans (rinsed and labels removed)</li>
+                            <li>Acrylic paint or spray paint</li>
+                            <li>Paintbrushes (if using acrylic paint)</li>
+                            <li>Soil and plants or seeds</li>
+                        </ul>
+                    </li>
+                    <li><strong>Procedure:</strong>
+                        <ol>
+                            <li>Paint the tin cans with vibrant colors or creative designs.</li>
+                            <li>Allow the paint to dry completely.</li>
+                            <li>Fill the cans with soil and plant your favorite flowers, herbs, or succulents.</li>
+                            <li>Water the plants as needed and place the tin can planters in a sunny spot.</li>
+                        </ol>
+                    </li>
+                    <li><strong>Note:</strong> This activity repurposes tin cans into decorative planters for a touch of
+                        greenery.</li>
+                </ul>
+    
+            </div>
+            <div class = "imgshow">
+                <img src = "images/everdream/tin.jpeg">
+                <img src = "images/everdream/tin2.jpeg">
+
+            </div>
+    
+            <div class = "idea">
+    
+    
+    
+                <h2>4. Cardboard Box Organizer:</h2>
+                <ul>
+                    <li><strong>Materials:</strong>
+                        <ul>
+                            <li>Sturdy cardboard boxes (cereal boxes, shoeboxes, etc.)</li>
+                            <li>Wrapping paper, fabric, or decorative paper</li>
+                            <li>Glue or tape</li>
+                            <li>Scissors</li>
+                        </ul>
+                    </li>
+                    <li><strong>Procedure:</strong>
+                        <ol>
+                            <li>Cut the cardboard boxes to the desired size and shape for organization.</li>
+                            <li>Cover the boxes with wrapping paper, fabric, or decorative paper using glue or tape.</li>
+                            <li>Arrange the covered boxes in a configuration that suits your storage needs (stacking or side
+                                by side).</li>
+                            <li>Use the organizers to store office supplies, accessories, or other household items.</li>
+                        </ol>
+                    </li>
+                    <li><strong>Note:</strong> This activity turns cardboard boxes into attractive and functional
+                        organizers.</li>
+                </ul>
+            </div>
+            <div class = "imgshow">
+                <img src = "images/everdream/cardboard.jpeg">
+                <img src = "images/everdream/cardboard2.jpeg">
+    
+            </div>
+
+        </div>
+        <footer>
+            
+        </footer>
+        
+        
+
+
+
+    </div>
+</body>
+
 </html>
