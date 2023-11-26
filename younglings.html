@@ -1,164 +1,147 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Younglings</title>
-        <link rel = "icon" href = "images/iconT.png" 
-        type = "image/x-icon" style="background-color:white;">
-        <link rel="stylesheet" href="styles/general.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/agrocontent.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <style>
-            @keyframes animate {
-                0%{
-                    transform: translateY(0) rotate(0deg);
-                    opacity: 1;
-                    border-radius: 0;
-                }
-                100%{
-                    transform: translateY(-1000px) rotate(720deg);
-                    opacity: 0;
-                    border-radius: 50%;
-                }
-            }
-            body{
-                color: rgb(230, 155, 85);
-            }
 
-            .background {
-                z-index: -1;
-                position: fixed;
-                width: 100vw;
-                height: 100vh;
-                top: 0;
-                left: 0;
-                margin: 0;
-                padding: 0;
-                background: #36982f;
-                overflow: hidden;
-            }
-            .background li {
-                position: absolute;
-                display: block;
-                list-style: none;
-                width: 20px;
-                height: 20px;
-                background: rgba(255, 255, 255, 0.2);
-                animation: animate 19s linear infinite;
-            }
+<head>
+    <title>Younglings</title>
+    <link rel="icon" href="images/iconT.png" type="image/x-icon" style="background-color:white;">
+    <!-- <link rel="stylesheet" href="styles/general.css"> -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/young.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
 
 
 
-            .background li:nth-child(0) {
-                left: 23%;
-                width: 191px;
-                height: 191px;
-                bottom: -191px;
-                animation-delay: 1s;
-            }
-            .background li:nth-child(1) {
-                left: 58%;
-                width: 137px;
-                height: 137px;
-                bottom: -137px;
-                animation-delay: 4s;
-            }
-            .background li:nth-child(2) {
-                left: 18%;
-                width: 150px;
-                height: 150px;
-                bottom: -150px;
-                animation-delay: 2s;
-            }
-            .background li:nth-child(3) {
-                left: 71%;
-                width: 145px;
-                height: 145px;
-                bottom: -145px;
-                animation-delay: 8s;
-            }
-            .background li:nth-child(4) {
-                left: 6%;
-                width: 166px;
-                height: 166px;
-                bottom: -166px;
-                animation-delay: 17s;
-            }
-            .background li:nth-child(5) {
-                left: 31%;
-                width: 150px;
-                height: 150px;
-                bottom: -150px;
-                animation-delay: 22s;
-            }
-            .background li:nth-child(6) {
-                left: 17%;
-                width: 155px;
-                height: 155px;
-                bottom: -155px;
-                animation-delay: 21s;
-            }
-            .background li:nth-child(7) {
-                left: 65%;
-                width: 113px;
-                height: 113px;
-                bottom: -113px;
-                animation-delay: 7s;
-            }
-            .background li:nth-child(8) {
-                left: 47%;
-                width: 121px;
-                height: 121px;
-                bottom: -121px;
-                animation-delay: 5s;
-            }
-            .background li:nth-child(9) {
-                left: 19%;
-                width: 186px;
-                height: 186px;
-                bottom: -186px;
-                animation-delay: 23s;
-            }
-        </style>
+</head>
+
+<body>
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <header>
 
 
 
-    </head>
-    <body>
-        <ul class="background">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-         </ul>
-        <div class="landing-page">
-            <header>
-                
+        <div class="left-section" onclick="location.href='index.html';">
+            <img class="logo" src="images/icon.png">
+            <img class="logo-text" src="images/logo text.png">
 
-                
-                <div class="left-section" onclick="location.href='index.html';">
-                    <img class="logo" src="images/icon.png">
-                    <img class="logo-text" src="images/logo text.png">
-    
-                </div>
-                <div class="right-section">
-                    <button class="sign-button" onclick="location.href='index.html';">Home</button>
-                </div>
-                
-    
-    
-                
-            </header>
-            <div class="line"></div>
         </div>
-    </body>
+        <div class="right-section">
+            <button class="sign-button" onclick="location.href='index.html';">Home</button>
+        </div>
+    </header>
+    <div class="landing-page">
+
+        <div class="line"></div>
+        <div class="allideas">
+            <div class = "idea">
+                <h2>Activities for Kids and the Environment</h2>
+                <p>Activities such as arts and crafts related to the environment can have several positive effects on kids,
+                such as helping them become more aware of existing environmental issues. It can foster a sense of
+                responsibility for the environment in them.</p>
+
+            </div>
+            <div class = "imgshow">
+                <img src = "images/young/seed2.jpeg">
+            </div>
+            <div class = "idea">
+                <h2>Seed Story Boards:</h2>
+            <ul>
+                <li><strong>Goal:</strong> This activity is aimed at developing calligraphic as well as writing skills
+                    in children while educating them on the various types of seeds available in the market and the
+                    methods used to extract and process them.</li>
+                <li><strong>Materials:</strong>
+                    <ul>
+                        <li>Sketch Pens</li>
+                        <li>Chart Paper</li>
+                        <li>Seed of your choice</li>
+                        <li>Tape</li>
+                    </ul>
+                </li>
+                <li><strong>Procedure:</strong>
+                    <ol>
+                        <li>Cut the chart paper into 4-6 pieces.</li>
+                        <li>Drop 2-4 seeds on the first paper and stick it wherever it lands.</li>
+                        <li>Write dialogues and draw a story around the seed.</li>
+                        <li>Continue the story through the next chart paper pieces.</li>
+                    </ol>
+                </li>
+                <li><strong>Note:</strong> Happy Writing!!! 😉</li>
+            </ul>
+
+            </div>
+            <div class = "imgshow">
+                <img src = "images/young/seed1.jpeg">
+                
+
+            </div>
+            <div class="idea">
+                <h2>Layer-By-Layer Animal Cells:</h2>
+            <ul>
+                <li><strong>Goal:</strong> Learning about the minute details and beauties in nature will develop a sense
+                    of wanting to protect these in kids. This activity can also help kids connect the knowledge gained
+                    in one subject to another.</li>
+                <li><strong>Materials:</strong>
+                    <ul>
+                        <li>A File</li>
+                        <li>A few clear folders</li>
+                        <li>Scissors (under the supervision of an adult)</li>
+                        <li>Colored Papers</li>
+                    </ul>
+                </li>
+                <li><strong>Procedure:</strong>
+                    <ol>
+                        <li>Cut a paper (color of your choice) in an oval shape.</li>
+                        <li>Cut various other colored papers in the shapes found in cells.</li>
+                        <li>Place the oval-shaped paper in a clear folder.</li>
+                        <li>Stick the other pieces scattered in each individual folder, separating them by their shapes.
+                        </li>
+                        <li>Place the clear folders in the file.</li>
+                        <li>As you lower each folder, you can see a cell being formed right before your eyes. 🤗</li>
+                    </ol>
+                </li>
+            </ul>
+
+            </div>
+
+            <div class = "imgshow">
+                <video src = "images/young/cell-gif.mp4" loop autoplay></video>
+            </div>
+
+            
+
+            
+
+
+
+
+
+
+        </div>
+        <footer>
+
+        </footer>
+
+
+
+
+
+    </div>
+    <script>
+        document.querySelector('video').playbackRate = 0.20;
+    </script>
+</body>
+
 </html>
