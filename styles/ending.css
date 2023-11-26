@@ -103,13 +103,13 @@
     font-weight: 200;
     font-size: 1.2em;
 }
-a{
+.info-end a{
     color: rgb(67, 246, 249);
     text-decoration: underline;
 }
-a:hover{
+.info-end a:hover{
     color: #31a2f8;
 }
-a:visited{
+.info-end a:visited{
     color: #E0C3FC;
 }
