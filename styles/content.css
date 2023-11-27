@@ -125,8 +125,9 @@
 
 .box-2 {
     margin-top: var(--pwidth);
+    margin-right: auto;
     height: 32px;
-    width: 100%;
+    width:auto;
     background-color: rgb(229, 180, 107);
     border-radius: 20px;
     color: aliceblue;
